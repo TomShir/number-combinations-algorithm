@@ -1,6 +1,7 @@
 from colorama import Fore 
 import sys 
 from itertools import permutations 
+import time 
 import os
 import pyttsx3
 pyttsx3.init()
@@ -13,9 +14,9 @@ try:
     time.sleep(1)
     for combination in combinations:
         print(f'{"".join(combination)}\n')
-        time.sleep(1)
+        time.sleep(0.1)
     else:
-        pass ''')
+      pass
 except ValueError:
     error_msg=f'ValueError:inappropiate value was entered'
     for text in error_msg:
